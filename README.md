@@ -1,4 +1,4 @@
-# Tajnimul Hossain — Portfolio (single-file, GitHub-editable)
+# Tajnimul Hossain - Portfolio (single-file, GitHub-editable)
 
 Everything is in **one `index.html`** (styles and scripts inlined), plus an `assets/` folder for
 images. No build step, no compiler. You edit the HTML directly on GitHub, commit, and the live site
