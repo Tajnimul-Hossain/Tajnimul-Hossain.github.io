@@ -4,16 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 
-  <title>Tajnimul Hossain | Robotics Researcher</title>
-  <meta name="description" content="Tajnimul Hossain is an Electrical & Electronic Engineering graduate and robotics researcher working on multi-agent UAV systems, swarm robotics, and autonomous aerial systems." />
+  <title>Tajnimul Hossain | Aerial Robotics</title>
+  <meta name="description" content="Tajnimul Hossain is an EEE graduate and research assistant at NIRO Lab, North South University, working on drone swarms, CubeSat radio links and CFD." />
   <meta name="theme-color" content="#2563EB" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Tajnimul Hossain | Robotics Researcher" />
-  <meta property="og:description" content="Robotics researcher working on multi-agent UAV systems, swarm coordination, and autonomous aerial robotics." />
+  <meta property="og:title" content="Tajnimul Hossain | Aerial Robotics" />
+  <meta property="og:description" content="Research assistant at NIRO Lab working on drone swarms, CubeSat radio links and CFD." />
   <meta property="og:locale" content="en_US" />
-  <!-- <meta property="og:url" content="https://YOURUSERNAME.github.io/" /> -->
+  <meta property="og:url" content="https://tajnimul-hossain.github.io/" />
   <!-- <meta property="og:image" content="https://YOURUSERNAME.github.io/assets/profile.jpg" /> -->
   <meta name="twitter:card" content="summary" />
 
@@ -219,6 +219,13 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .tech li { font-family: var(--mono); font-size: 12.5px; color: var(--text-soft); background: var(--bg); border: 1px solid var(--border); padding: 5px 10px; border-radius: var(--radius-sm); }
 
 
+.project-media--plot img { object-fit: contain; background: #fff; padding: 10px; }
+.project-media--plot:hover img { transform: none; }
+.project--text { grid-template-columns: 1fr; }
+.project--text .project-desc { max-width: 68ch; }
+.project-note { font-size: 13.5px; color: var(--text-soft); margin: 14px 0 0; font-style: italic; }
+.skills-grid.skills-grid--three { grid-template-columns: repeat(3, 1fr); }
+
 /* ---------- skills ---------- */
 .skills-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
 .skill-group { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 24px 26px; }
@@ -269,7 +276,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
   .edu-card--simple { grid-template-columns: 1fr; text-align: left; }
   .edu-logo { width: 52px; height: 52px; }
   .research-grid { grid-template-columns: 1fr; }
-  .skills-grid { grid-template-columns: 1fr; }
+  .skills-grid, .skills-grid.skills-grid--three { grid-template-columns: 1fr; }
   .edu-card { grid-template-columns: 1fr; }
   .project, .project--reverse { grid-template-columns: 1fr; gap: 24px; }
   .project--reverse .project-media { order: 0; }
@@ -318,10 +325,11 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
           <div class="hero-text">
             <p class="hero-eyebrow anim" style="--d:.05s">Robotics &amp; Intelligent Systems</p>
             <h1 class="hero-title anim" style="--d:.12s">Tajnimul Hossain</h1>
-            <p class="hero-subtitle anim" style="--d:.20s">Robotics Researcher · UAV Systems · Swarm Robotics</p>
+            <p class="hero-subtitle anim" style="--d:.20s">Drone Swarms · CubeSat Radio · CFD</p>
             <p class="hero-intro anim" style="--d:.28s">
-              Electrical &amp; Electronic Engineering graduate from North South University, working on
-              multi-agent UAV systems, swarm coordination, and autonomous aerial robotics.
+              EEE graduate from North South University and research assistant at NIRO Lab.
+              I work on multi-drone flight, from simulation to real hardware, and on the radio
+              links of a 3U CubeSat.
             </p>
             <div class="hero-affiliations anim" style="--d:.36s" aria-label="Affiliations">
               <img class="aff-nsu" src="assets/nsu-logo.png" alt="North South University" width="600" height="600" />
@@ -351,14 +359,16 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
         <div class="block reveal" id="about-block">
           <h2 class="block-title">About</h2>
           <p class="block-lead">
-            I am an Electrical &amp; Electronic Engineering graduate with a research focus on
-            artificial intelligence, robotics, and modeling &amp; simulation. My work centers on
-            multi-agent aerial robotics, swarm coordination, formation control, and autonomous
-            mission execution, spanning simulation, system development, and flight-control hardware.
+            I studied Electrical &amp; Electronic Engineering at North South University, with a
+            specialization in robotics. Most of my work is on drones that fly together: formation
+            control and collision avoidance in CoppeliaSim first, then the same code on Pixhawk
+            quadcopters outdoors. I also work on the radio side of NSU-AI-SAT, a 3U CubeSat, and
+            run CFD for the lab's ring-wing VTOL airframes. What survives the move from simulation
+            to real hardware is what interests me most.
           </p>
           <ul class="about-facts about-facts--two">
-            <li class="fact"><span class="fact-key">Role</span><span class="fact-val">Robotics Researcher</span></li>
-            <li class="fact"><span class="fact-key">Focus</span><span class="fact-val">Multi-Agent Robotics</span></li>
+            <li class="fact"><span class="fact-key">Role</span><span class="fact-val">Research Assistant, NIRO Lab</span></li>
+            <li class="fact"><span class="fact-key">Focus</span><span class="fact-val">Multi-drone systems</span></li>
           </ul>
         </div>
 
@@ -371,7 +381,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
               <h3>North South University</h3>
               <p class="edu-degree">B.Sc. in Electrical &amp; Electronic Engineering</p>
             </div>
-            <p class="edu-meta">Specialization in Robotics &amp; Intelligent Systems</p>
+            <p class="edu-meta">Specialization in Robotics &amp; Intelligent Systems<br />2021 – Feb 2026</p>
           </article>
         </div>
 
@@ -381,11 +391,12 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 
           <div class="research-identity">
             <img class="ri-logo" src="assets/niro-logo.png" alt="NSU Intelligent Robotics (NIRO) Lab" width="1336" height="438" />
-            <p class="ri-role">Robotics Researcher · NIRO Lab</p>
-            <p class="ri-org">North South University</p>
+            <p class="ri-role">Research Assistant · NIRO Lab</p>
+            <p class="ri-org">NSU Intelligent Robotics Lab, North South University · May 2026 – present<br />Student Researcher, Summer 2025 – Apr 2026</p>
             <p class="ri-desc">
-              Research on multi-agent UAV systems, swarm coordination, and autonomous aerial
-              robotics, taking coordinated-flight work from simulation toward real hardware.
+              Advised by Dr. Shahnewaz Siddique, Lab Director. I work on the lab's 3-drone swarm,
+              co-designed the frequency plan for the NSU-AI-SAT CubeSat and built its GNU Radio
+              signal chains, and run CFD on the lab's ring-wing VTOL airframes.
             </p>
           </div>
 
@@ -397,7 +408,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
             </article>
             <article class="research-card">
               <h3>Modeling &amp; Simulation</h3>
-              <p>Physics-based modeling and simulation of aerial systems, from dynamics to flight-control development.</p>
+              <p>Physics-based modeling and simulation of aerial vehicles: vehicle dynamics, flight control and aerodynamics.</p>
             </article>
           </div>
         </div>
@@ -419,7 +430,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
                <a> tag below (the whole card becomes clickable again automatically). Example:
                <a class="project-link" href="https://github.com/Tajnimul-Hossain/coordinated-drone-swarms" target="_blank" rel="noopener" aria-label="Coordinated Drone Swarms, view on GitHub">
                For now it is intentionally not linked. -->
-          <a class="project-link" href="https://github.com/Tajnimul-Hossain/coordinated-drone-swarms" target="_blank" rel="noopener" aria-label="Coordinated Drone Swarms, view on GitHub">
+          <a class="project-link" aria-label="Coordinated Drone Swarms">
             <article class="project">
               <figure class="project-media">
                 <video class="project-video" autoplay loop muted playsinline preload="metadata" poster="assets/project-drone-swarm.jpg">
@@ -431,32 +442,100 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
                 <h3 class="project-title">Coordinated Drone Swarms</h3>
                 <p class="project-tagline">Precision Agriculture · Fisheries · Drone Shows</p>
                 <p class="project-desc">
-                  A three-drone coordinated swarm developed at NIRO Lab and taken from CoppeliaSim
-                  simulation through to outdoor flight tests. Custom quadcopters on Pixhawk 2.4.8 with
-                  M9N GPS and a centralized ground-control station perform autonomous takeoff, waypoint
-                  navigation, formation control, and collision avoidance, with a modular payload for
-                  spraying, fish-feed dispensing, or synchronized LED light shows.
+                  A 3-drone swarm I built with a four-person team, first in CoppeliaSim and then on
+                  Pixhawk 2.4.8 quadcopters. The first outdoor 3-drone formation flew in March 2026.
+                  In field tests, positioning error fell from 9–10 m with M6 GPS to 0.5–1 m with
+                  M9N modules and an RTK base station. In a simulated light show the drones never
+                  came within 2.2 m of each other. Built for spraying or feed dispensing; flight
+                  tests used LED payloads.
                 </p>
                 <ul class="tech" aria-label="Technologies used">
                   <li>CoppeliaSim</li><li>Python</li><li>ArduPilot</li><li>Pixhawk 2.4.8</li><li>M9N GPS</li><li>Raspberry Pi</li>
+                </ul>
+                <p class="project-note">Code is private until the work is published.</p>
+              </div>
+            </article>
+          </a>
+
+          <a class="project-link" aria-label="NSU-AI-SAT CubeSat radio links">
+            <article class="project project--text">
+              <div class="project-body">
+                <p class="project-index">Project 02</p>
+                <h3 class="project-title">NSU-AI-SAT: CubeSat Radio Links</h3>
+                <p class="project-tagline">3U CubeSat · APSCO CubeSat Competition</p>
+                <p class="project-desc">
+                  On the communications team, I co-designed the five-mode UHF/VHF/S-band frequency plan
+                  and built the GNU Radio signal chains for the satellite and the ground station, checking
+                  QPSK modulation, carrier and timing recovery, and S-band burst timing. Under the team's
+                  link budget, the 1 Mbps S-band downlink closes with 16.5 dB of margin at 24° elevation
+                  and sends a full 156 Mbit observation in one pass.
+                </p>
+                <ul class="tech" aria-label="Technologies used">
+                  <li>GNU Radio</li><li>SDR</li><li>UHF/VHF</li><li>S-band</li><li>QPSK</li>
                 </ul>
               </div>
             </article>
           </a>
 
-          <!-- CubeSat and further projects will be added here later -->
+          <a class="project-link" href="https://github.com/Tajnimul-Hossain/kingfisher-ringwing-cfd" target="_blank" rel="noopener" aria-label="Project Kingfisher, view on GitHub">
+            <article class="project project--reverse">
+              <figure class="project-media project-media--plot">
+                <img src="assets/kingfisher-forces.png" alt="Force history from the SimScale CFD run" loading="lazy" />
+              </figure>
+              <div class="project-body">
+                <p class="project-index">Project 03</p>
+                <h3 class="project-title">Project Kingfisher</h3>
+                <p class="project-tagline">Ring-wing VTOL airframe CFD</p>
+                <p class="project-desc">
+                  I ran SimScale CFD on two ring-wing airframes designed by the lab's project lead.
+                  At 15 m/s the smaller MK3 had 19% less drag than MK2 (0.55 N vs 0.68 N), but its
+                  drag coefficient was slightly higher (0.156 vs 0.145), so most of the gain came
+                  from size, not shape.
+                </p>
+                <ul class="tech" aria-label="Technologies used">
+                  <li>SimScale</li><li>CFD</li>
+                </ul>
+              </div>
+            </article>
+          </a>
+
+          <a class="project-link" href="https://github.com/Tajnimul-Hossain/vit-cifar-pytorch" target="_blank" rel="noopener" aria-label="Vision Transformer, view on GitHub">
+            <article class="project">
+              <figure class="project-media project-media--plot">
+                <img src="assets/vit-cifar10.png" alt="CIFAR-10 training curves" loading="lazy" />
+              </figure>
+              <div class="project-body">
+                <p class="project-index">Project 04</p>
+                <h3 class="project-title">Vision Transformer on CIFAR</h3>
+                <p class="project-tagline">PyTorch · trained from scratch</p>
+                <p class="project-desc">
+                  A Vision Transformer with a convolutional stem, written from scratch in PyTorch.
+                  It reaches 92.9% test accuracy on CIFAR-10 and 74.7% on CIFAR-100 after 200 epochs.
+                  A hyperparameter comparison showed that pushing the learning rate to 3e-3 made
+                  training diverge.
+                </p>
+                <ul class="tech" aria-label="Technologies used">
+                  <li>PyTorch</li><li>Python</li><li>Google Colab</li>
+                </ul>
+              </div>
+            </article>
+          </a>
         </div>
 
         <div class="block reveal">
           <h2 class="block-title">Technical Skills</h2>
-          <div class="skills-grid">
+          <div class="skills-grid skills-grid--three">
             <div class="skill-group">
               <h3>Programming</h3>
-              <p class="skill-list">Python · C/C++ (embedded)</p>
+              <p class="skill-list">Python · C/C++ (embedded) · PyTorch</p>
             </div>
             <div class="skill-group">
-              <h3>Robotics &amp; Control</h3>
-              <p class="skill-list">Flight control (ArduPilot, PX4/Pixhawk) · MAVLink · PID &amp; cascaded control · Consensus protocols · Trajectory &amp; motion planning · Task allocation</p>
+              <h3>Drones &amp; Control</h3>
+              <p class="skill-list">ArduPilot · PX4/Pixhawk · MAVLink · Mission Planner · PID &amp; cascaded control · Formation control · Collision avoidance · Trajectory planning</p>
+            </div>
+            <div class="skill-group">
+              <h3>RF &amp; Space</h3>
+              <p class="skill-list">GNU Radio · Software-defined radio · RF frequency planning · CubeSat communications</p>
             </div>
             <div class="skill-group">
               <h3>Embedded &amp; Hardware</h3>
@@ -464,7 +543,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
             </div>
             <div class="skill-group">
               <h3>Simulation &amp; Modeling</h3>
-              <p class="skill-list">CoppeliaSim · SimScale · MATLAB &amp; Simulink</p>
+              <p class="skill-list">CoppeliaSim · SimScale (CFD) · MATLAB &amp; Simulink</p>
             </div>
           </div>
         </div>
@@ -479,7 +558,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
       <div class="container contact-inner">
         <h2 class="block-title">Let's Connect</h2>
         <p class="contact-text reveal">
-          Interested in robotics, autonomous aerial systems, swarm intelligence, or research collaboration?
+          Working on drones, small satellites or anything that has to fly for real? I would like to hear about it.
         </p>
         <div class="contact-actions reveal">
           <a href="mailto:tajnimulhossain@gmail.com" class="btn btn-primary">Email</a>
